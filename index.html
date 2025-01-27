@@ -84,13 +84,7 @@ body {
   margin-left: 45px;
   margin-bottom: 15px;
 }
-.content p {
-  margin-bottom: 15px;
-  margin-right: 45px;
-  margin-left: 45px;
-  font-size: 20px;
-  font-weight: 300;
-}
+
 
 /* Mid Section */
 .mid-section {
@@ -124,20 +118,15 @@ ul li::marker {
 
 /* Register Section */
 .register {
-  height: 200px;
-  margin-top: 30px;
+  /* margin-top: 30px;
   background-color: #FFBB1C;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  padding-top: 50px;
+  padding-top: 50px; */
 }
-.register p {
-  font-size: 18px;
-  margin: 0;
-  text-align: center;
-}
+
 .register .cta {
   margin-top: 70px;
   width: 258px;
@@ -154,17 +143,14 @@ ul li::marker {
 
 /* Footer */
 .footer {
-  background-color: #f4f4f4;
   color: #777;
   text-align: center;
-  padding: 20px;
   font-size: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .footer-logo {
-  margin-bottom: 20px;
 }
 .logo {
   max-width: 200px;
@@ -240,12 +226,6 @@ ul li::marker {
     margin-right: 20px;
   }
 
-  .content p {
-    font-size: 16px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
   /* Mid Section */
   .mid-section h2 {
     font-size: 20px;
@@ -309,11 +289,7 @@ ul li::marker {
     margin-right: 20px;
   }
 
-  .content p {
-    font-size: 16px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+
 
   /* Mid Section */
   .mid-section h2 {
@@ -376,11 +352,6 @@ ul li::marker {
     margin-right: 20px;
   }
 
-  .content p {
-    font-size: 16px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
 
   /* Mid Section */
   .mid-section h2 {
@@ -409,18 +380,19 @@ ul li::marker {
 
 @media (max-width: 315px) {
 
-    .hero-content{
-        position: relative;
-    }
-
   .header {
     font-size: 18px;
     padding: 15px;
   }
 
-  .cta {
-    width: 45px;
-    font-size: 14px;
+  .header img{
+    object-fit: contain;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .hero {
+    position: relative;
   }
 
   .hero-content h1 {
@@ -440,57 +412,112 @@ ul li::marker {
     left: 30%;
   }
 
+
+
+  .hero-content {
+    position: absolute;
+        top: -10%;
+        left: 147%;
+        text-align: center;
+        transform: translateX(-180%);
+        width: fit-content;
+    }
+
+    .hero-text-right{
+      display: flex;
+    }
+
+    .hero-text{
+      text-align: left;
+    }
+
+    .yellow-line{
+      width: 3pt;
+      height: auto;
+      background: yellow;
+    }
+
+
+    .hero-btn{
+      font-size: 0.5rem;
+      border: 1px solid yellow;
+    }
+
+   
+
   .content {
-    padding: 15px;
-    margin-top: -30px;
-    margin-bottom: -30px;
+  margin: 10px;
+  text-align: justify;
 
   }
 
-  .content h2 {
-    font-size: 16px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
 
-  .content p {
+  .content-text {
     font-size: 14px;
     margin-left: 10px;
     margin-right: 10px;
   }
 
+
   /* Mid Section */
-  .mid-section h2 {
-    font-size: 18px;
-    margin-left: 5px;
+
+
+  .mid-section{
+    margin: 10px 0px;
+    font-size: 14px;
+    background-color: #ddd;
+    height: auto;
+    padding: 20px;
+    text-align: justify;
   }
 
-  ul li {
-    font-size: 16px;
+  .mid-section-heading{
+    font-weight: bold;
+  }
+
+
+
+  .mid-section-list{
+    margin: 0px 10px;
+  }
+
+  .mid-section-list-items {
+    font-size: 14px;
+    font-weight:normal;
     margin-left: -30px;
 
   }
 
   .mid-section span {
-    font-size: 16px;
+    font-size: 14px;
 
   }
 
   /* Register Section */
   .register {
-    height: 180px;
-    padding-top: 40px;
+    font-size: 10px;
+  background-color: #FFBB1C;
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
   }
 
-  .register p {
-    font-size: 16px;
+  .register-text {
+    font-size: 14px;
+    text-align: justify;
+    margin: 10px
   }
 
-  .register .cta {
-    width: 200px;
-    font-size: 16px;
+
+  .register-btn{
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid black;
     padding: 10px 20px;
-    margin-top: 41px;
+    font-weight:500 ;
   }
 
   /* Footer */
@@ -498,13 +525,28 @@ ul li::marker {
     max-width: 150px;
   }
 
-  .footer-text {
-    font-size: 12px;
+  .footer-date{
+
   }
 
-  .footer-text span {
-    margin-top: 15px;
+  .footer-social-links{
+    width:max-content
   }
+
+  .footer-text {
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer-innertext, .footer-cta, .footer-navigator{
+    margin-top: 20px;
+  } 
+ 
+
+ 
 }
 
   </style>
@@ -548,7 +590,7 @@ ul li::marker {
       <div class="mid-section">
       <p class="mid-section-heading">Why Should You Attend?</p>
       <ul class="mid-section-list">
-        <li class="mid-section-list-items">Learn all about new and upcoming features<span>-You'll be 
+        <li class="mid-section-list-items">Learn all about new and upcoming features<span>- You'll be 
             among the first to learn about these exciting updates, 
             which will help you better leverage Blackboard Learn and 
             enhance the learning experience for your users.</span></li>
@@ -556,7 +598,7 @@ ul li::marker {
             have the opportunity to hear from our product 
             management leaders directly and get insights into their 
             vision for the future of Blackboard Learn.</span></li>
-        <li class="mid-section-list-items">Get to know and network with your peers<span>-The webinar is 
+        <li class="mid-section-list-items">Get to know and network with your peers<span>- The webinar is 
             an excellent opportunity to connect with your peers. 
             Networking with your peers can help you gain valuable 
             insights and new ideas.</span></li>
