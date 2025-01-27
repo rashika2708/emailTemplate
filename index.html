@@ -252,67 +252,162 @@ ul li::marker {
 
 
 @media (max-width: 415px) {
-  .email-container {
-    width: 90%;
+  
+  .header {
+    font-size: 18px;
+    padding: 15px;
   }
-  .header img {
-  padding-left: 10px;
-  margin: 0;
-}
 
-
-  /* Hero Section */
-  .hero-content {
-    top: 10%;
-    left: 80%;
-    right: 5%;
-    text-align: center;
-    transform: translateX(-50%);
+  .header img{
+    object-fit: contain;
+    padding: 0px;
+    margin: 0px;
   }
   
-  .hero-content h1 {
-    font-size: 24px;
-    text-align: left;
+  .hero {
+    position: relative;
   }
 
-  .hero-content .cta {
-    width: 130px;
-    font-size: 12px;
-    padding: 10px;
-    
+  
+
+
+  .hero-content {
+    position: absolute;
+        top: 10%;
+        left: 130%;
+        text-align: center;
+        transform: translateX(-180%);
+        width: fit-content;
+    }
+
+    .hero-text-right{
+      display: flex;
+
+    }
+
+    .hero-text{
+      text-align: left;
+      font-size: 1rem;
+    }
+
+    .yellow-line{
+      width: 3pt;
+      height: auto;
+      background: yellow;
+    }
+
+
+    .hero-btn{
+      font-size: 0.5rem;
+      border: 1px solid yellow;
+    }
+
+   
+
+  .content {
+  margin: 10px;
+  text-align: justify;
+
   }
 
-  /* Content Section */
-  .content h2 {
-    font-size: 18px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
 
+  .content-text {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
 
   /* Mid Section */
-  .mid-section h2 {
-    font-size: 20px;
+
+
+  .mid-section{
+    margin: 10px 0px;
+    font-size: 14px;
+    background-color: #ddd;
+    height: auto;
+    padding: 20px;
+    text-align: justify;
   }
 
-  ul li {
-    font-size: 18px;
+  .mid-section-heading{
+    font-weight: bold;
+  }
+
+
+
+  .mid-section-list{
+    margin: 0px 10px;
+  }
+
+  .mid-section-list-items {
+    font-size: 14px;
+    font-weight:normal;
+    margin-left: -30px;
+
   }
 
   .mid-section span {
-    font-size: 18px;
+    font-size: 14px;
+
   }
 
-  .register .cta {
-    width: 220px;
-    font-size: 18px;
-    padding: 15px 20px;
+  /* Register Section */
+  .register {
+    font-size: 10px;
+  background-color: #FFBB1C;
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  }
+
+  .register-text {
+    font-size: 14px;
+    text-align: justify;
+    margin: 10px
+  }
+
+
+  .register-btn{
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-weight:500 ;
+  }
+
+  /* Footer */
+  .footer-logo img {
+    max-width: 150px;
+  }
+
+  .footer-date{
+
+  }
+
+  .footer-social-links{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
   }
 
   .footer-text {
-    font-size: 14px;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
+
+  .footer-innertext, .footer-cta, .footer-navigator{
+    margin-top: 20px;
+  } 
+ 
+
+ 
 }
 @media (max-width: 375px) {
   .email-container {
@@ -530,7 +625,9 @@ ul li::marker {
   }
 
   .footer-social-links{
-    width:max-content
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
   }
 
   .footer-text {
