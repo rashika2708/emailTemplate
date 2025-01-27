@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Template</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.email-container {
+  max-width: 650px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 1px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header img {
+  padding-left: 20px;
+  height: 60px;
+  width: 230px;
+  display: block;
+  margin: 0;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.hero img {
+  width: 100%;
+  display: block;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 77%;
+  color: #f4f4f4;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: right;
+}
+.hero-content h1 {
+  font-size: 30px;
+  font-weight: 100;
+  margin: 0;
+  text-align: left;
+
+}
+.hero-content .cta {
+  height: 34px;
+  width: 155px;
+  margin-top: 20px;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 1px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* Content Section */
+.content {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.content h2 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-right: 45px;
+  margin-left: 45px;
+  margin-bottom: 15px;
+}
+.content p {
+  margin-bottom: 15px;
+  margin-right: 45px;
+  margin-left: 45px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* Mid Section */
+.mid-section {
+  margin-top: 50px;
+  background-color: #ddd;
+  height: auto;
+  padding: 20px;
+}
+.mid-section h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 25px;
+}
+ul {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+ul li {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 20px;
+}
+ul li::marker {
+  font-size: 1.2em;
+  color: #333;
+}
+.mid-section span {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* Register Section */
+.register {
+  height: 200px;
+  margin-top: 30px;
+  background-color: #FFBB1C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding-top: 50px;
+}
+.register p {
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+.register .cta {
+  margin-top: 70px;
+  width: 258px;
+  height: 51px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #777;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #f4f4f4;
+  color: #777;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo {
+  margin-bottom: 20px;
+}
+.logo {
+  max-width: 200px;
+}
+.social-links {
+  margin-bottom: 10px;
+}
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #777;
+}
+.social-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  display: inline-block;
+}
+.facebook-box {
+  background-color: #007FA3;
+}
+.linkedin-box {
+  background-color: #FF757A;
+}
+.x-box {
+  background-color: #FFBB1C;
+}
+.footer-text {
+  margin: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+.footer-text span {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .email-container {
+    width: 90%;
+  }
+  .header img {
+  padding-left: 10px;
+  margin: 0;
+}
+
+
+  /* Hero Section */
+  .hero-content {
+    top: 10%;
+    left: 80%;
+    right: 5%;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+  
+  .hero-content h1 {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .hero-content .cta {
+    width: 130px;
+    font-size: 12px;
+    padding: 10px;
+    
+  }
+
+  /* Content Section */
+  .content h2 {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .content p {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* Mid Section */
+  .mid-section h2 {
+    font-size: 20px;
+  }
+
+  ul li {
+    font-size: 18px;
+  }
+
+  .mid-section span {
+    font-size: 18px;
+  }
+
+  .register .cta {
+    width: 220px;
+    font-size: 18px;
+    padding: 15px 20px;
+  }
+
+  .footer-text {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 415px) {
+  .email-container {
+    width: 90%;
+  }
+  .header img {
+  padding-left: 10px;
+  margin: 0;
+}
+
+
+  /* Hero Section */
+  .hero-content {
+    top: 10%;
+    left: 80%;
+    right: 5%;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+  
+  .hero-content h1 {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .hero-content .cta {
+    width: 130px;
+    font-size: 12px;
+    padding: 10px;
+    
+  }
+
+  /* Content Section */
+  .content h2 {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .content p {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* Mid Section */
+  .mid-section h2 {
+    font-size: 20px;
+  }
+
+  ul li {
+    font-size: 18px;
+  }
+
+  .mid-section span {
+    font-size: 18px;
+  }
+
+  .register .cta {
+    width: 220px;
+    font-size: 18px;
+    padding: 15px 20px;
+  }
+
+  .footer-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  .email-container {
+    width: 90%;
+  }
+  .header img {
+  padding-left: 10px;
+  margin: 0;
+}
+
+
+  /* Hero Section */
+  .hero-content {
+    top: 10%;
+    left: 80%;
+    right: 5%;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+  
+  .hero-content h1 {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .hero-content .cta {
+    width: 130px;
+    font-size: 12px;
+    padding: 10px;
+    
+  }
+
+  /* Content Section */
+  .content h2 {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .content p {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* Mid Section */
+  .mid-section h2 {
+    font-size: 20px;
+  }
+
+  ul li {
+    font-size: 18px;
+  }
+
+  .mid-section span {
+    font-size: 18px;
+  }
+
+  .register .cta {
+    width: 220px;
+    font-size: 18px;
+    padding: 15px 20px;
+  }
+
+  .footer-text {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 315px) {
+
+    .hero-content{
+        position: relative;
+    }
+
+  .header {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .cta {
+    width: 45px;
+    font-size: 14px;
+  }
+
+  .hero-content h1 {
+    position: absolute;
+    top: -370%;
+    width: 30%;
+    left: 30%;
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .hero-content .cta {
+    font-size: 10px;
+    padding: 8px 15px;
+    position: absolute;
+    top: -150%;
+    left: 30%;
+  }
+
+  .content {
+    padding: 15px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+
+  }
+
+  .content h2 {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .content p {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* Mid Section */
+  .mid-section h2 {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+  ul li {
+    font-size: 16px;
+    margin-left: -30px;
+
+  }
+
+  .mid-section span {
+    font-size: 16px;
+
+  }
+
+  /* Register Section */
+  .register {
+    height: 180px;
+    padding-top: 40px;
+  }
+
+  .register p {
+    font-size: 16px;
+  }
+
+  .register .cta {
+    width: 200px;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 41px;
+  }
+
+  /* Footer */
+  .footer-logo img {
+    max-width: 150px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+
+  .footer-text span {
+    margin-top: 15px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="header">
+      <img src="./LogoEmailTemp.jpg" alt="Logo"/>
+    </div>
+    <div class="hero">
+      <img src="heroImage.jpg" alt="Hero Image">
+      <div class="hero-content">
+        <div class="hero-text-right">
+          <div class="hero-text"> Webinar: Blackboard Learn Roadmap Update </div>
+          <span class="yellow-line"></span>
+        </div>
+        
+        <input type="button" value="WATCH ON DEMAND" class="hero-btn"/>
+      </div>
+    </div>
+    <div class="content">
+      <p class="content-text">Dear Humberto,</p>
+      <p class="content-text">
+        We're excited to announce that we will be hosting a 
+        Blackboard Learn roadmap update webinar, and we invite 
+        you to join us. As a valued partner, we want to give you an 
+        exclusive look into the Learn product roadmap and show 
+        you what's in store for the future.
+      </p>
+      <p class="content-text">
+        In this webinar, you'll hear directly from our product 
+        management leaders who will give you an overview of the 
+        updates and new features that are coming soon. This is 
+        your chance to get an insider's look into what’s next for 
+        Blackboard Learn and gain valuable insights that will help 
+        you enable your users with the tools they need to succeed. 
+        With limited spots available, we encourage you to register 
+        soon to avoid missing out on this opportunity.
+      </p>
+      </div>
+      <div class="mid-section">
+      <p class="mid-section-heading">Why Should You Attend?</p>
+      <ul class="mid-section-list">
+        <li class="mid-section-list-items">Learn all about new and upcoming features<span>-You'll be 
+            among the first to learn about these exciting updates, 
+            which will help you better leverage Blackboard Learn and 
+            enhance the learning experience for your users.</span></li>
+        <li class="mid-section-list-items">Hear straight from our product management leaders<span>- You'll 
+            have the opportunity to hear from our product 
+            management leaders directly and get insights into their 
+            vision for the future of Blackboard Learn.</span></li>
+        <li class="mid-section-list-items">Get to know and network with your peers<span>-The webinar is 
+            an excellent opportunity to connect with your peers. 
+            Networking with your peers can help you gain valuable 
+            insights and new ideas.</span></li>
+      </ul>
+   
+
+
+    </div>
+
+    <div class="register">
+        <p class="register-text">Register today and stay up to date on all Blackboard Learn has to offer.        </p>
+        <button href="#" class="register-btn">REGISTER NOW</button>
+    </div>
+    <div class="footer">
+        <div class="footer-logo">
+          <img src="./Anthology Logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="footer-date"><p>17752 11/24</p></div>
+        <div class="footer-social-links">
+          <a href="https://facebook.com" target="_blank"> <span class="social-icon"></span>  Facebook </a>
+          <a href="https://linkedin.com" target="_blank"> <span class="social-icon"></span>    LinkedIn</a>
+          <a href="https://x.com" target="_blank"> <span class="social-icon"></span>  X</span></a>
+        </div>
+      
+        <div class="footer-text">
+          <div class="footer-innertext">
+          &copy; 2024 Anthology Inc. All rights reserved. <br>
+          Calle 100 No. 7-33 Torre 1, Edificio Capital Tower, Piso 5, Oficina 501, Bogotá, Colombia <br>
+          </div>
+          <div class="footer-cta">
+          <span>Actualice sus Dato  </span>  | <span>Administre sus Preferencias</span> | <span> Cancelar Subscripción</span> </div>
+         <div class="footer-navigator"> <p>Var en navegador </p> </div>
+        </div>
+      </div>
+      
+  </div>
+</body>
+</html>
