@@ -38,10 +38,23 @@ body {
   width: 100%;
   height: auto;
 }
+
+.hero::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left,  black,transparent 50%);
+}
+
+
 .hero img {
   width: 100%;
   display: block;
 }
+
 .hero-content {
   position: absolute;
   top: 50%;
@@ -51,95 +64,115 @@ body {
   padding: 20px;
   text-align: right;
 }
-.hero-content h1 {
-  font-size: 30px;
-  font-weight: 100;
-  margin: 0;
-  text-align: left;
 
-}
-.hero-content .cta {
-  height: 34px;
-  width: 155px;
-  margin-top: 20px;
-  background-color: #fff;
-  color: black;
-  text-align: center;
-  border: 1px solid #fff;
-  border-radius: 1px;
-  font-weight: 600;
-  font-size: 13px;
-}
+
+
+.hero-text-right{
+      display: flex;
+
+    }
+
+    .hero-text{
+      text-align: left;
+      font-size: 2rem;
+      margin-right: 10px;
+    }
+
+    .yellow-line{
+      width: 4pt;
+      height: auto;
+      background: #FFBB1C;
+    }
+
+
+    .hero-btn{
+      font-size: 0.7rem;
+      border: 1px solid yellow;
+      width: 162px;
+      height: 34px;
+      margin: 16px;
+      position: absolute;
+      left: 0;
+
+      font-weight: 600;
+    }
+
+   
+
+
+
+
+
 
 /* Content Section */
 .content {
-  margin-top: 30px;
-  font-size: 16px;
+  margin: 30px;
+  font-size: 18px;
   line-height: 1.6;
+  text-align: justify;
 }
-.content h2 {
-  font-size: 20px;
-  font-weight: 300;
-  margin-right: 45px;
-  margin-left: 45px;
-  margin-bottom: 15px;
-}
+
 
 
 /* Mid Section */
 .mid-section {
-  margin-top: 50px;
   background-color: #ddd;
   height: auto;
   padding: 20px;
 }
-.mid-section h2 {
+.mid-section-heading {
   font-size: 22px;
   font-weight: 600;
   margin-left: 25px;
 }
-ul {
+.mid-section-list {
   margin-left: 30px;
   margin-right: 30px;
 }
-ul li {
+.mid-section-list-items {
   margin-bottom: 15px;
   font-weight: 500;
   font-size: 20px;
 }
-ul li::marker {
+.mid-section-list-items::marker {
   font-size: 1.2em;
   color: #333;
 }
-.mid-section span {
+.mid-section-list-items span {
   font-size: 20px;
   font-weight: 300;
 }
 
 /* Register Section */
 .register {
-  /* margin-top: 30px;
+    font-size: 18px;
+    
   background-color: #FFBB1C;
+  margin: 20px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
-  padding-top: 50px; */
-}
+  justify-content: center;
+  min-height: 140px;
+  }
 
-.register .cta {
-  margin-top: 70px;
-  width: 258px;
-  height: 51px;
-  padding: 10px 20px;
-  background-color: #fff;
-  color: #777;
-  text-decoration: none;
-  border-radius: 2px;
-  font-size: 22px;
-  font-weight: 600;
-  text-align: center;
-}
+  .register-text {
+    font-size: 14px;
+    text-align: justify;
+    margin: 10px
+  }
+
+
+  .register-btn{
+    margin: auto;
+    font-size: 22px;
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-weight:600 ;
+  }
+
+
 
 /* Footer */
 .footer {
@@ -150,43 +183,53 @@ ul li::marker {
   flex-direction: column;
   align-items: center;
 }
-.footer-logo {
-}
+
 .logo {
   max-width: 200px;
 }
-.social-links {
-  margin-bottom: 10px;
-}
-.social-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #777;
-}
-.social-box {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-  display: inline-block;
-}
-.facebook-box {
-  background-color: #007FA3;
-}
-.linkedin-box {
-  background-color: #FF757A;
-}
-.x-box {
-  background-color: #FFBB1C;
-}
-.footer-text {
-  margin: 30px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-size: 15px;
-}
-.footer-text span {
-  margin-top: 20px;
-}
+
+.footer-logo img {
+    max-width: 150px;
+  }
+
+  .footer-date{
+
+  }
+
+  .footer-social-links{
+    width: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+  }
+
+  .social-icon img{
+    width: 16px;
+    height: 16px;
+  }
+
+  .footer-text {
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 20px;
+    font-weight: 100;
+  
+  }
+
+  .footer-innertext, .footer-cta, .footer-navigator{
+    margin-top: 30px;
+  } 
+
+  .footer-social-links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+
 
 @media (max-width: 768px) {
   .header {
@@ -237,6 +280,8 @@ ul li::marker {
       font-size: 1rem;
       font-weight: 600;
       margin-top: 40px;
+      width: fit-content;
+      height: fit-content;
       border: 1px solid #FFBB1C;
     }
 
@@ -351,6 +396,12 @@ ul li::marker {
 
 
 @media (max-width: 415px) {
+
+  .hero-btn{
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+  }
   
   .header {
     font-size: 18px;
@@ -390,7 +441,7 @@ ul li::marker {
     }
 
     .yellow-line{
-      width: 3pt;
+      width: 4pt;
       height: auto;
       background: #FFBB1C;
     }
@@ -401,6 +452,8 @@ ul li::marker {
       border: 1px solid #FFBB1C;
       font-weight: 600;
       margin-top: 10px;
+      height: fit-content;
+    width: fit-content;
 
     }
 
@@ -562,6 +615,8 @@ ul li::marker {
       margin-top: 10px;
       border: 1px solid #FFBB1C;
       font-weight: 600;
+      height: fit-content;
+    width: fit-content;
 
     }
 
@@ -673,6 +728,12 @@ ul li::marker {
 
 @media (max-width: 315px) {
 
+  .hero-btn{
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+  }
+
   .header {
     font-size: 18px;
     padding: 15px;
@@ -708,7 +769,7 @@ ul li::marker {
     .yellow-line{
       width: 3pt;
       height: auto;
-      background: yellow;
+      background: #FFBB1C;
     }
 
 
@@ -717,6 +778,8 @@ ul li::marker {
       border: 1px solid yellow;
       font-weight: 600;
       margin-top: 10px;
+      height: fit-content;
+    width: fit-content;
 
     }
 
@@ -898,9 +961,10 @@ ul li::marker {
         </div>
         <div class="footer-date"><p>17752 11/24</p></div>
         <div class="footer-social-links">
-          <a href="https://facebook.com" target="_blank"> <span class="social-icon"></span>  Facebook </a>
-          <a href="https://linkedin.com" target="_blank"> <span class="social-icon"></span>    LinkedIn</a>
-          <a href="https://x.com" target="_blank"> <span class="social-icon"></span>  X</span></a>
+          
+          <a href="https://facebook.com" target="_blank"> <span class="social-icon"> <img src="./facebook-svgrepo-com.svg" alt=""></span>  Facebook </a>
+          <a href="https://linkedin.com" target="_blank"> <span class="social-icon"> <img src="./linkedin-svgrepo-com.svg" alt=""></span>    LinkedIn</a>
+          <a href="https://x.com" target="_blank"> <span class="social-icon"><img src="./x.svg" alt=""></span>  X</span></a>
         </div>
       
         <div class="footer-text">
